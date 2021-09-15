@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: nunito;
+}
+
+.banner {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #FFBE51;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+header img{
+    width: 350px;
+    margin: 0;
+    padding: 0;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 15px;
+    align-items: center;
+    display: flex;
+}
+
+header ul li a {
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    align-items: center;
+}
+
+/* CORPO */
+
+section.corpo {
+    display: flex;
+    margin: 10% 0;
+}
+
+section.corpo p {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: #757575;
+    margin-right: 5%;
+}
+
+section.corpo img {
+    width: 500px;
+}
+
+section.servicos {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+section.serv {
+    background-color: #E5E5E5;
+    padding-bottom: 7%;
+}
+
+section.serv h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    color: #000000;
+    padding-top: 40px;
+}
+
+section.servicos article h3{
+    font-weight: 700;
+    text-transform: lowercase;
+    margin: 5px 0;
+}
+
+section.servicos article p {
+    font-weight: 400;
+    margin: 0;
+}
+
+section.mais {
+    display: flex;
+    margin: 10%;
+}
+
+section.mais img {
+    width: 500px;
+}
+
+section.mais p {
+    padding-left: 10%;
+    color: #757575;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 37px;
+}
+
+section.mais p span {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+section.rodape{
+    display: flex;
+    padding: 3% 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+section.fundo {
+    background-color: #FFBE51;
+}
+
+footer {
+    background-color: #C4C4C4;
+}
+
+section.rodape img{
+    width: 225px;
+}
+
+section.rodape p a {
+    text-decoration: none;
+    color: black;
+}
+
+footer p#copyrigth {
+    text-align: center;
+    margin:0;
+    padding: 15px;
+}
+
+
+
+
+
