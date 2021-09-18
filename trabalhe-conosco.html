@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Trabalhe conosco</h1>
+
+
+        <!-- nome, email, telefone, currículo, descrição, data de nascimento, carga horária, café ou chá -->
+        <!-- method padrão: GET (deixa os dados na URL) -->
+        <form> 
+            
+            <label for="nome-completo">Nome Completo</label>
+            <input type="text" name="nome-completo" id="nome-completo" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999">
+
+            <label for="curriculo">Currículo</label>
+            <input type="file" name="curriculo" id="curriculo">
+
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao"></textarea>
+
+            <label for="data-nascimento">Data de Nascimento</label>
+            <input type="date" name="data-nascimento" id="data-nascimento">
+
+            <label for="carga-horatia">Carga Horária</label>
+            <select name="carga-horarioa" id="carga-horaria">
+                <option value="Tempo Integral">Tempo Integral</option>
+                <option value="Meio Período">Meio Período</option>
+                <option value="Freelancer">Freelancer</option>
+            </select>
+
+            <button type="submit">enviar</button> 
+        </form>
+    </div>
+</body>
+</html>

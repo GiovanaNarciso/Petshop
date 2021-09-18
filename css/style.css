@@ -77,12 +77,13 @@ section.corpo img {
     width: 500px;
 }
 
-section.servicos {
+section.sec-servicos {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 section.serv {
@@ -98,13 +99,13 @@ section.serv h2 {
     padding-top: 40px;
 }
 
-section.servicos article h3{
+section.sec-servicos article h3{
     font-weight: 700;
     text-transform: lowercase;
     margin: 5px 0;
 }
 
-section.servicos article p {
+section.sec-servicos article p {
     font-weight: 400;
     margin: 0;
 }
@@ -164,6 +165,117 @@ footer p#copyrigth {
     margin:0;
     padding: 15px;
 }
+
+/* PÁGINA SERVIÇOS */
+
+.content {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#servicos {
+    margin: 8% 0% 0% 0%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 55px;
+    color:rgba(255, 193, 7, 1);
+}
+
+.banho-completo img {
+    width: 250px;
+    height: 250px;
+    margin: 8% 5% 8% 13%;
+}
+
+.banho-completo {
+    display: flex;
+    border-bottom: solid 3px #C4C4C4;
+}
+
+
+article button {
+    height: 10%;
+    padding: 5px 80px;
+    border-radius: 0%;
+    border: 0;
+    background-color: #FFC107;
+    text-transform: lowercase;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.banho-completo article {
+    margin: 8% 13% 8% 0%;
+}
+
+article h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+article h2 span {
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+article p {
+    font-size: 20px;
+    font-weight:lighter;
+    line-height: 25px;
+    color: #757575;
+}
+
+/* PÁGINA CONTATOS */
+
+.content h1 {
+    margin: 8% 0% 5% 0%;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color:rgba(255, 193, 7, 1);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0 20px;
+    resize: none;
+}
+
+form textarea {
+    padding: 5px 100px 100px 5px;
+}
+
+form button {
+    height: 10%;
+    padding: 5px 200px;
+    border-radius: 0%;
+    border: 0;
+    background-color: #FFC107;
+    text-transform: lowercase;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.contatos-redes {
+    display: flex;
+}
+
+
 
 
 
