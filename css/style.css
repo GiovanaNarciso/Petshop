@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;800&display=swap');
 
 * {
     box-sizing: border-box;
@@ -116,7 +116,7 @@ section.mais {
 }
 
 section.mais img {
-    width: 500px;
+    width: 400px;
 }
 
 section.mais p {
@@ -234,6 +234,7 @@ article p {
 
 /* PÁGINA CONTATOS */
 
+
 .content h1 {
     margin: 8% 0% 5% 0%;
     font-weight: bold;
@@ -242,6 +243,7 @@ article p {
     text-transform: uppercase;
     color:rgba(255, 193, 7, 1);
 }
+
 
 form input, form textarea {
     width: 100%;
@@ -256,7 +258,7 @@ form textarea {
 
 form button {
     height: 10%;
-    padding: 5px 200px;
+    padding: 1% 45%;
     border-radius: 0%;
     border: 0;
     background-color: #FFC107;
@@ -271,8 +273,104 @@ form {
     flex-wrap: wrap;
 }
 
-section.contatos-redes {
+section.contatar {
     display: flex;
+    justify-content: space-between;
+}
+
+div.contatar {
+    width: 40%;
+}
+
+.contatos-redes {
+    margin-bottom: 10%;
+}
+
+.contatos-redes p {
+    margin: 0 0 20px 0;
+}
+
+.contatos-redes p a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* PÁGINA LOGIN */
+
+section.login, section.cadastro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+}
+
+section.login img {
+    width: 465px;
+    height: 370px;
+}
+
+div.login {
+    padding-bottom: 115px;
+    width: 40%;
+    box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+}
+
+.login form h2 {
+    margin: 10% 34%;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: #FFC107;
+}
+
+.login form input, .cadastro form input {
+    margin: 10px 60px;
+}
+
+button#entrar {
+    margin: 2% 24%;
+    height: 10%;
+    padding: 1% 20%;
+    border-radius: 0%;
+    border: 0;
+    background-color: #FFC107;
+    text-transform: lowercase;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login a {
+    margin: 0 27%;
+    color: black;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+/* PÁGINA CADASTRO */
+
+section.cadastro img  {
+    width: 500px;
+    height: 270px;
+}
+
+div.cadastro {
+    padding-bottom: 80px;
+    width: 40%;
+    box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+}
+
+.cadastro form h2 {
+    margin: 10% 22%;
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: #FFC107;
 }
 
 

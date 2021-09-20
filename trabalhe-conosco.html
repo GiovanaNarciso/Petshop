@@ -15,7 +15,7 @@
 
         <!-- nome, email, telefone, currículo, descrição, data de nascimento, carga horária, café ou chá -->
         <!-- method padrão: GET (deixa os dados na URL) -->
-        <form> 
+        <form enctype="multipart/form-data"> 
             
             <label for="nome-completo">Nome Completo</label>
             <input type="text" name="nome-completo" id="nome-completo" required>
@@ -27,20 +27,40 @@
             <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999">
 
             <label for="curriculo">Currículo</label>
-            <input type="file" name="curriculo" id="curriculo">
+            <input type="file" name="curriculo" id="curriculo" accept="image/*, .pdf" multiple required>
 
             <label for="descricao">Descrição</label>
-            <textarea name="descricao" id="descricao"></textarea>
+            <textarea name="descricao" id="descricao" required maxlength="200"></textarea>
 
             <label for="data-nascimento">Data de Nascimento</label>
-            <input type="date" name="data-nascimento" id="data-nascimento">
+            <input type="date" name="data-nascimento" id="data-nascimento" required>
 
             <label for="carga-horatia">Carga Horária</label>
-            <select name="carga-horarioa" id="carga-horaria">
+            <select name="carga-horarioa" id="carga-horaria" required>
+                <option selected disabled value="">Selecione uma opção</option>
                 <option value="Tempo Integral">Tempo Integral</option>
-                <option value="Meio Período">Meio Período</option>
+                <option value="Meio Período">Meio Período</option>\
                 <option value="Freelancer">Freelancer</option>
             </select>
+
+
+            <p>Prefere café ou chá?</p>
+
+            <div class="check">
+                <input type="checkbox" name="preferencia_bebida" id="cafe">
+                <label for="cafe">Café</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" name="preferencia_bebida" id="cha">
+                <label for="cha">Chá</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" name="preferencia_bebida" id="outro">
+                <label for="outro">Outro</label>
+            </div>
+
 
             <button type="submit">enviar</button> 
         </form>

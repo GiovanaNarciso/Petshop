@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
 }
 
-form input,
+form input:not([type="checkbox"]),
 form textarea,
 form select {
     width: 100%;
@@ -25,12 +25,38 @@ form select {
     resize: none;
 }
 
+form input:not([type="checkbox"], [type="file"]):focus-visible,
+form textarea:focus-visible,
+form select:focus-visible {
+    outline-color: #ffbe51;
+}
+
+
 form button {
-    padding: 5px 10px;
+    padding: 15px 30px;
     text-transform: uppercase;
     background-color: #ffbe51;
     border: 0;
     color: #fff;
     font-weight: 600;
+    transition: 0.4
+    s;
+}
+
+form button:hover{
+    background-color: #ee9e15;
+}
+
+form button:active{
+    background-color: #bd7c0c;
+}
+
+form .check {
+    margin: 5px 0;
+}
+
+/* espaçamento maior entre o último checkbox e o botão enviar */
+form .check:last-of-type {
+    margin-bottom: 30px;
 }
 
