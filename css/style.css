@@ -65,7 +65,7 @@ section.corpo {
 section.corpo p {
     font-family: Nunito;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 40px;
     line-height: 55px;
     text-transform: uppercase;
@@ -93,20 +93,20 @@ section.serv {
 
 section.serv h2 {
     text-align: center;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 40px;
     color: #000000;
     padding-top: 40px;
 }
 
 section.sec-servicos article h3{
-    font-weight: 700;
+    font-weight: 600;
     text-transform: lowercase;
     margin: 5px 0;
 }
 
 section.sec-servicos article p {
-    font-weight: 400;
+    font-weight: 600;
     margin: 0;
 }
 
@@ -122,7 +122,7 @@ section.mais img {
 section.mais p {
     padding-left: 10%;
     color: #757575;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 27px;
     line-height: 37px;
 }
@@ -257,8 +257,8 @@ form textarea {
 }
 
 form button {
+    width: 100%;
     height: 10%;
-    padding: 1% 45%;
     border-radius: 0%;
     border: 0;
     background-color: #FFC107;
@@ -307,7 +307,7 @@ section.login, section.cadastro {
 
 section.login img {
     width: 465px;
-    height: 370px;
+    /* height: 380px; */
 }
 
 div.login {
@@ -353,8 +353,7 @@ button#entrar {
 /* PÁGINA CADASTRO */
 
 section.cadastro img  {
-    width: 500px;
-    height: 270px;
+    width: 50%;
 }
 
 div.cadastro {
@@ -372,6 +371,499 @@ div.cadastro {
     text-transform: uppercase;
     color: #FFC107;
 }
+
+/* RESPONSIVIDADE DA PÁGINA HOME */
+
+@media (max-width: 1040px) {
+
+    .container {
+        width: 1200px;
+        max-width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .banner{
+        width: 1200px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    section.rodape{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .rodape iframe {
+        margin: 0% 2%;
+    }
+    
+    header ul {
+        padding: 0;
+    }
+
+    section.corpo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sec-servicos article {
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+
+    section.mais {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        justify-content: center;
+    }
+
+    section.mais img {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    header img {
+        width: 300px;
+    }
+
+    header ul li a {
+        font-size: 20px;
+    }
+
+    header ul {
+        padding: 0;
+    }
+
+    header .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section.corpo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section.corpo img {
+        width: 400px;
+    }
+
+    section.corpo p {
+        font-size: 35px;
+    }
+
+    section.mais {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        justify-content: center;
+    }
+
+    section.mais img {
+        width: 300px;
+    }
+
+    section.rodape{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner {
+        width: 1000px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .sec-servicos article {
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+
+    .mais img {
+        margin-top: 50px;
+    }
+
+    .rodape iframe {
+        margin: 0% 10%;
+    }
+}
+
+@media (max-width: 530px) {
+    
+    header img {
+        width: 300px;
+    }
+
+    header ul li a {
+        font-size: 15px;
+    }
+
+    header ul {
+        padding: 0;
+    }
+
+    header .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section.corpo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section.corpo img {
+        width: 300px;
+    }
+
+    section.corpo p {
+        font-size: 35px;
+    }
+
+    section.mais {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        justify-content: center;
+    }
+
+    section.mais img {
+        width: 300px;
+    }
+
+    section.rodape{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner {
+        width: 1000px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .sec-servicos article {
+        margin-bottom: 60px;
+        padding: 20px;
+    }
+
+    .mais img {
+        margin-top: 50px;
+    }
+
+    .rodape iframe {
+        margin: 0% 10%;
+    }
+}
+
+
+/* RESPONSIVIDADE DA PÁGINA SERVIÇOS */
+
+@media (max-width: 800px) {
+
+    .content {
+        width: 1000px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .banho-completo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banho-completo img {
+        margin: 50px 0;
+    }
+
+    .banho-completo article {
+        margin: 0 0 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 530px) {
+
+    header img {
+        width: 300px;
+    }
+
+    header ul li a {
+        font-size: 15px;
+    }
+
+    header ul {
+        padding: 0;
+    }
+
+    header .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content {
+        width: 1000px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .banho-completo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banho-completo img {
+        margin: 50px 0;
+    }
+
+    .banho-completo article {
+        margin: 0 0 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* RESPONSIVIDADE DA PÁGINA CONTATOS */
+
+@media (max-width: 1040px) {
+    .content {
+        width: 1000px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .contatar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content h1 {
+        text-align: center;
+    }
+
+    div.contatar {
+        width: 100%;
+    }
+
+    .contatos-redes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10%;
+    } 
+
+    .contatos-redes p {
+        text-align: center;
+    }
+
+    .contatos-redes iframe {
+        width: 90%;
+    }
+}
+
+@media (max-width: 530px) {
+    .content {
+        width: 1000px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .contatar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.contatar {
+        width: 100%;
+    }
+
+    .contatos-redes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10%;
+    } 
+
+    .contatos-redes p {
+        text-align: center;
+    }
+
+    .contatos-redes iframe {
+        width: 90%;
+    }
+}
+
+/* RESPONSIVIDADE DA PÁGINA LOGIN */
+
+@media (max-width: 1040px) {
+
+    .content {
+        width: 1000px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    section.login {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section.login img {
+        width: 100%;
+        padding: 40px;
+    }
+
+    div.login {
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20%;
+    }
+
+    div.login a {
+        text-align: center;
+    }
+
+    div.login form {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .content {
+        width: 1000px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    section.login {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section.login img {
+        width: 100%;
+        padding: 40px;
+    }
+
+    div.login {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20%;
+    }
+
+    div.login a {
+        text-align: center;
+    }
+
+    div.login form {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 545px) {
+    div.login {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20%;
+    }
+}
+
+/* RESPONSIVIDADE DA PÁGINA CADASTRO */
+
+@media (max-width: 1040px) {
+    .content {
+        width: 1000px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    section.cadastro {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section.cadastro img {
+        width: 80%;
+        padding: 80px;
+    }
+
+    div.cadastro form {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    div.cadastro {
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20%;
+    }
+}
+
+@media (max-width: 800px) {
+    section.cadastro img {
+        width: 100%;
+        padding: 80px;
+    }
+
+    div.cadastro {
+        width: 80%;
+    }
+}
+
+@media (max-width: 545px) {
+    section.cadastro img {
+        width: 100%;
+        padding: 40px;
+    }
+
+    div.cadastro {
+        width: 100%;
+    }
+}
+
 
 
 
